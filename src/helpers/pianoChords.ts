@@ -1,627 +1,627 @@
 let pianoChords = JSON.parse(`{
   "pianoChords": [
     {
-      "type" : "Do",
+      "type" : "C",
       "chords": [
         {
-          "name": "DO",
+          "name": "C",
           "keys": [
-            {"name": "Do"},
-            {"name": "Mi"},
-            {"name": "Sol"}
+            {"name": "C"},
+            {"name": "E"},
+            {"name": "G"}
           ]
         },
         {
-          "name": "DOm",
+          "name": "Cm",
           "keys": [
-            {"name": "Do"},
-            {"name": "Mi b"},
-            {"name": "Sol"}
+            {"name": "C"},
+            {"name": "E♭"},
+            {"name": "G"}
           ]
         },
         {
-          "name": "DO 7",
+          "name": "C 7",
           "keys": [
-            {"name": "Do"},
-            {"name": "Mi"},
-            {"name": "Sol"},
-            {"name": "Si b"}
+            {"name": "C"},
+            {"name": "E"},
+            {"name": "G"},
+            {"name": "B♭"}
           ]
         },
         {
-          "name": "DOm 7",
+          "name": "Cm 7",
           "keys": [
-            {"name": "Do"},
-            {"name": "Mi b"},
-            {"name": "Sol"},
-            {"name": "Si b"}
+            {"name": "C"},
+            {"name": "E♭"},
+            {"name": "G"},
+            {"name": "B♭"}
           ]
         },
 
         {
-          "name": "DO#",
+          "name": "C#",
           "keys": [
-            {"name": "Do#"},
-            {"name": "Fa"},
-            {"name": "Sol#"}
+            {"name": "C#"},
+            {"name": "F"},
+            {"name": "G#"}
           ]
         },
         {
-          "name": "DO#m",
+          "name": "C#m",
           "keys": [
-            {"name": "Do#"},
-            {"name": "Mi"},
-            {"name": "Sol#"}
+            {"name": "C#"},
+            {"name": "E"},
+            {"name": "G#"}
           ]
         },
         {
-          "name": "DO# 7",
+          "name": "C# 7",
           "keys": [
-            {"name": "Do#"},
-            {"name": "Fa"},
-            {"name": "Sol#"},
-            {"name": "Si"}
+            {"name": "C#"},
+            {"name": "F"},
+            {"name": "G#"},
+            {"name": "B"}
           ]
         },
         {
-          "name": "DO# 7m",
+          "name": "C# 7m",
           "keys": [
-            {"name": "Do#"},
-            {"name": "Mi"},
-            {"name": "Sol#"},
-            {"name": "Si"}
+            {"name": "C#"},
+            {"name": "E"},
+            {"name": "G#"},
+            {"name": "B"}
           ]
         }
       ]
     },
     {
-      "type": "Ré",
+      "type": "D",
       "chords": [
         {
-          "name": "Ré♭",
+          "name": "D♭",
           "keys": [
-            {"name": "Ré b"},
-            {"name": "Si"},
-            {"name": "La b"}
+            {"name": "D♭"},
+            {"name": "B"},
+            {"name": "A♭"}
           ]
         },
         {
-          "name": "Ré♭m",
+          "name": "D♭m",
           "keys": [
-            {"name": "Ré b"},
-            {"name": "Mi"},
-            {"name": "La b"}
+            {"name": "D♭"},
+            {"name": "E"},
+            {"name": "A♭"}
           ]
         },
         {
-          "name": "Ré♭ 7",
+          "name": "D♭ 7",
           "keys": [
-            {"name": "Ré b"},
-            {"name": "Si"},
-            {"name": "La b"},
-            {"name": "Si"}
+            {"name": "D♭"},
+            {"name": "B"},
+            {"name": "A♭"},
+            {"name": "B"}
           ]
         },
         {
-          "name": "Ré♭ 7m",
+          "name": "D♭ 7m",
           "keys": [
-            {"name": "Ré b"},
-            {"name": "Mi"},
-            {"name": "La b"},
-            {"name": "Si"}
+            {"name": "D♭"},
+            {"name": "E"},
+            {"name": "A♭"},
+            {"name": "B"}
           ]
         },
     
         {
-          "name": "Ré",
+          "name": "D",
           "keys": [
-            {"name": "Ré"},
-            {"name": "Fa#"},
-            {"name": "La"}
+            {"name": "D"},
+            {"name": "F#"},
+            {"name": "A"}
           ]
         },
         {
-          "name": "Rém",
+          "name": "Dm",
           "keys": [
-            {"name": "Ré"},
-            {"name": "Fa"},
-            {"name": "La"}
+            {"name": "D"},
+            {"name": "F"},
+            {"name": "A"}
           ]
         },
         {
-          "name": "Ré 7",
+          "name": "D 7",
           "keys": [
-            {"name": "Ré"},
-            {"name": "Fa#"},
-            {"name": "La"},
-            {"name": "Do"}
+            {"name": "D"},
+            {"name": "F#"},
+            {"name": "A"},
+            {"name": "C"}
           ]
         },
         {
-          "name": "Rém 7",
+          "name": "Dm 7",
           "keys": [
-            {"name": "Ré"},
-            {"name": "Fa"},
-            {"name": "La"},
-            {"name": "Do"}
+            {"name": "D"},
+            {"name": "F"},
+            {"name": "A"},
+            {"name": "C"}
           ]
         },
         
         {
-          "name": "Ré#",
+          "name": "D#",
           "keys": [
-            {"name": "Ré#"},
-            {"name": "Sol"},
-            {"name": "La#"}
+            {"name": "D#"},
+            {"name": "G"},
+            {"name": "A#"}
           ]
         },
         {
-          "name": "Ré#m",
+          "name": "D#m",
           "keys": [
-            {"name": "Ré#"},
-            {"name": "Fa#"},
-            {"name": "La#"}
+            {"name": "D#"},
+            {"name": "F#"},
+            {"name": "A#"}
           ]
         },
         {
-          "name": "Ré# 7",
+          "name": "D# 7",
           "keys": [
-            {"name": "Ré#"},
-            {"name": "Sol"},
-            {"name": "La#"},
-            {"name": "Do#"}
+            {"name": "D#"},
+            {"name": "G"},
+            {"name": "A#"},
+            {"name": "C#"}
           ]
         },
         {
-          "name": "Ré#m 7",
+          "name": "D#m 7",
           "keys": [
-            {"name": "Ré#"},
-            {"name": "Fa#"},
-            {"name": "La#"},
-            {"name": "Do#"}
+            {"name": "D#"},
+            {"name": "F#"},
+            {"name": "A#"},
+            {"name": "C#"}
           ]
         }
       ]
     },
     {
-      "type": "Mi",
+      "type": "E",
       "chords": [
         {
-          "name": "Mi♭",
+          "name": "E♭",
           "keys": [
-            {"name": "Mi b"},
-            {"name": "Sol"},
-            {"name": "Si b"}
+            {"name": "E♭"},
+            {"name": "G"},
+            {"name": "B♭"}
           ]
         },
         {
-          "name": "Mi♭m",
+          "name": "E♭m",
           "keys": [
-            {"name": "Mi b"},
-            {"name": "Sol b"},
-            {"name": "Si b"}
+            {"name": "E♭"},
+            {"name": "G♭"},
+            {"name": "B♭"}
           ]
         },
         {
-          "name": "Mi♭ 7",
+          "name": "E♭ 7",
           "keys": [
-            {"name": "Mi b"},
-            {"name": "Sol"},
-            {"name": "Si b"},
-            {"name": "Ré b"}
+            {"name": "E♭"},
+            {"name": "G"},
+            {"name": "B♭"},
+            {"name": "D♭"}
           ]
         },
         {
-          "name": "Mi♭m 7",
+          "name": "E♭m 7",
           "keys": [
-            {"name": "Mi b"},
-            {"name": "Sol b"},
-            {"name": "Si b"},
-            {"name": "Ré b"}
+            {"name": "E♭"},
+            {"name": "G♭"},
+            {"name": "B♭"},
+            {"name": "D♭"}
           ]
         },
     
         {
-          "name": "Mi",
+          "name": "E",
           "keys": [
-            {"name": "Mi"},
-            {"name": "Sol#"},
-            {"name": "Si"}
+            {"name": "E"},
+            {"name": "G#"},
+            {"name": "B"}
           ]
         },
         {
-          "name": "Mim",
+          "name": "Em",
           "keys": [
-            {"name": "Mi"},
-            {"name": "Sol"},
-            {"name": "Si"}
+            {"name": "E"},
+            {"name": "G"},
+            {"name": "B"}
           ]
         },
         {
-          "name": "Mi 7",
+          "name": "E 7",
           "keys": [
-            {"name": "Mi"},
-            {"name": "Sol#"},
-            {"name": "Si"},
-            {"name": "Ré"}
+            {"name": "E"},
+            {"name": "G#"},
+            {"name": "B"},
+            {"name": "D"}
           ]
         },
         {
-          "name": "Mim 7",
+          "name": "Em 7",
           "keys": [
-            {"name": "Mi"},
-            {"name": "Sol"},
-            {"name": "Si"},
-            {"name": "Ré"}
+            {"name": "E"},
+            {"name": "G"},
+            {"name": "B"},
+            {"name": "D"}
           ]
         }
       ]
     },
     {
-      "type": "Fa",
+      "type": "F",
       "chords": [
         {
-          "name": "Fa",
+          "name": "F",
           "keys": [
-            {"name": "Fa"},
-            {"name": "La"},
-            {"name": "Do"}
+            {"name": "F"},
+            {"name": "A"},
+            {"name": "C"}
           ]
         },
         {
-          "name": "Fam",
+          "name": "Fm",
           "keys": [
-            {"name": "Fa"},
-            {"name": "La b"},
-            {"name": "Do"}
+            {"name": "F"},
+            {"name": "A♭"},
+            {"name": "C"}
           ]
         },
         {
-          "name": "Fa 7",
+          "name": "F 7",
           "keys": [
-            {"name": "Fa"},
-            {"name": "La"},
-            {"name": "Do"},
-            {"name": "Mi b"}
+            {"name": "F"},
+            {"name": "A"},
+            {"name": "C"},
+            {"name": "E♭"}
           ]
         },
         {
-          "name": "Fam 7",
+          "name": "Fm 7",
           "keys": [
-            {"name": "Fa"},
-            {"name": "La b"},
-            {"name": "Do"},
-            {"name": "Mi b"}
+            {"name": "F"},
+            {"name": "A♭"},
+            {"name": "C"},
+            {"name": "E♭"}
           ]
         },
     
         {
-          "name": "Fa#",
+          "name": "F#",
           "keys": [
-            {"name": "Fa#"},
-            {"name": "La#"},
-            {"name": "Do#"}
+            {"name": "F#"},
+            {"name": "A#"},
+            {"name": "C#"}
           ]
         },
         {
-          "name": "Fa#m",
+          "name": "F#m",
           "keys": [
-            {"name": "Fa#"},
-            {"name": "La"},
-            {"name": "Do#"}
+            {"name": "F#"},
+            {"name": "A"},
+            {"name": "C#"}
           ]
         },
         {
-          "name": "Fa# 7",
+          "name": "F# 7",
           "keys": [
-            {"name": "Fa#"},
-            {"name": "La#"},
-            {"name": "Do#"},
-            {"name": "Mi"}
+            {"name": "F#"},
+            {"name": "A#"},
+            {"name": "C#"},
+            {"name": "E"}
           ]
         },
         {
-          "name": "Fa#m 7",
+          "name": "F#m 7",
           "keys": [
-            {"name": "Fa#"},
-            {"name": "La"},
-            {"name": "Do#"},
-            {"name": "Mi"}
+            {"name": "F#"},
+            {"name": "A"},
+            {"name": "C#"},
+            {"name": "E"}
           ]
         }
       ]
     },
     {
-      "type": "Sol",
+      "type": "G",
       "chords": [
         {
-          "name": "Sol♭",
+          "name": "G♭",
           "keys": [
-            {"name": "Sol b"},
-            {"name": "Si b"},
-            {"name": "Ré b"}
+            {"name": "G♭"},
+            {"name": "B♭"},
+            {"name": "D♭"}
           ]
         },
         {
-          "name": "Sol♭m",
+          "name": "G♭m",
           "keys": [
-            {"name": "Sol b"},
-            {"name": "La"},
-            {"name": "Ré b"}
+            {"name": "G♭"},
+            {"name": "A"},
+            {"name": "D♭"}
           ]
         },
         {
-          "name": "Sol♭ 7",
+          "name": "G♭ 7",
           "keys": [
-            {"name": "Sol b"},
-            {"name": "Si b"},
-            {"name": "Ré b"},
-            {"name": "Mi"}
+            {"name": "G♭"},
+            {"name": "B♭"},
+            {"name": "D♭"},
+            {"name": "E"}
           ]
         },
         {
-          "name": "Sol♭m 7",
+          "name": "G♭m 7",
           "keys": [
-            {"name": "Sol b"},
-            {"name": "La"},
-            {"name": "Ré b"},
-            {"name": "Mi"}
+            {"name": "G♭"},
+            {"name": "A"},
+            {"name": "D♭"},
+            {"name": "E"}
           ]
         },
     
         
         {
-          "name": "Sol",
+          "name": "G",
           "keys": [
-            {"name": "Sol"},
-            {"name": "Si"},
-            {"name": "Ré"}
+            {"name": "G"},
+            {"name": "B"},
+            {"name": "D"}
           ]
         },
         {
-          "name": "Solm",
+          "name": "Gm",
           "keys": [
-            {"name": "Sol"},
-            {"name": "Si b"},
-            {"name": "Ré"}
+            {"name": "G"},
+            {"name": "B♭"},
+            {"name": "D"}
           ]
         },
         {
-          "name": "Sol 7",
+          "name": "G 7",
           "keys": [
-            {"name": "Sol"},
-            {"name": "Si"},
-            {"name": "Ré"},
-            {"name": "Fa"}
+            {"name": "G"},
+            {"name": "B"},
+            {"name": "D"},
+            {"name": "F"}
           ]
         },
         {
-          "name": "Solm 7",
+          "name": "Gm 7",
           "keys": [
-            {"name": "Sol"},
-            {"name": "Si b"},
-            {"name": "Ré"},
-            {"name": "Fa"}
+            {"name": "G"},
+            {"name": "B♭"},
+            {"name": "D"},
+            {"name": "F"}
           ]
         },
     
     
         {
-          "name": "Sol#",
+          "name": "G#",
           "keys": [
-            {"name": "Sol#"},
-            {"name": "Do"},
-            {"name": "Ré#"}
+            {"name": "G#"},
+            {"name": "C"},
+            {"name": "D#"}
           ]
         },
         {
-          "name": "Sol#m",
+          "name": "G#m",
           "keys": [
-            {"name": "Sol#"},
-            {"name": "Si"},
-            {"name": "Ré#"}
+            {"name": "G#"},
+            {"name": "B"},
+            {"name": "D#"}
           ]
         },
         {
-          "name": "Sol# 7",
+          "name": "G# 7",
           "keys": [
-            {"name": "Sol#"},
-            {"name": "Do"},
-            {"name": "Ré#"},
-            {"name": "Fa#"}
+            {"name": "G#"},
+            {"name": "C"},
+            {"name": "D#"},
+            {"name": "F#"}
           ]
         },
         {
-          "name": "Sol#m 7",
+          "name": "G#m 7",
           "keys": [
-            {"name": "Sol#"},
-            {"name": "Si"},
-            {"name": "Ré#"},
-            {"name": "Fa#"}
+            {"name": "G#"},
+            {"name": "B"},
+            {"name": "D#"},
+            {"name": "F#"}
           ]
         }
       ]
     },
     {
-      "type": "La",
+      "type": "A",
       "chords": [
         {
-          "name": "La♭",
+          "name": "A♭",
           "keys": [
-            {"name": "La b"},
-            {"name": "Do"},
-            {"name": "Mi b"}
+            {"name": "A♭"},
+            {"name": "C"},
+            {"name": "E♭"}
           ]
         },
         {
-          "name": "La♭m",
+          "name": "A♭m",
           "keys": [
-            {"name": "La b"},
-            {"name": "Si"},
-            {"name": "Mi b"}
+            {"name": "A♭"},
+            {"name": "B"},
+            {"name": "E♭"}
           ]
         },
         {
-          "name": "La♭ 7",
+          "name": "A♭ 7",
           "keys": [
-            {"name": "La b"},
-            {"name": "Do"},
-            {"name": "Mi b"},
-            {"name": "Sol b"}
+            {"name": "A♭"},
+            {"name": "C"},
+            {"name": "E♭"},
+            {"name": "G♭"}
           ]
         },
         {
-          "name": "La♭m 7",
+          "name": "A♭m 7",
           "keys": [
-            {"name": "La b"},
-            {"name": "Si"},
-            {"name": "Mi b"},
-            {"name": "Sol b"}
-          ]
-        },
-    
-        {
-          "name": "La",
-          "keys": [
-            {"name": "La"},
-            {"name": "Do#"},
-            {"name": "Mi"}
-          ]
-        },
-        {
-          "name": "Lam",
-          "keys": [
-            {"name": "La"},
-            {"name": "Do"},
-            {"name": "Mi"}
-          ]
-        },
-        {
-          "name": "La 7",
-          "keys": [
-            {"name": "La"},
-            {"name": "Do#"},
-            {"name": "Mi"},
-            {"name": "Sol"}
-          ]
-        },
-        {
-          "name": "Lam 7",
-          "keys": [
-            {"name": "La"},
-            {"name": "Do"},
-            {"name": "Mi"},
-            {"name": "Sol"}
+            {"name": "A♭"},
+            {"name": "B"},
+            {"name": "E♭"},
+            {"name": "G♭"}
           ]
         },
     
+        {
+          "name": "A",
+          "keys": [
+            {"name": "A"},
+            {"name": "C#"},
+            {"name": "E"}
+          ]
+        },
+        {
+          "name": "Am",
+          "keys": [
+            {"name": "A"},
+            {"name": "C"},
+            {"name": "E"}
+          ]
+        },
+        {
+          "name": "A 7",
+          "keys": [
+            {"name": "A"},
+            {"name": "C#"},
+            {"name": "E"},
+            {"name": "G"}
+          ]
+        },
+        {
+          "name": "Am 7",
+          "keys": [
+            {"name": "A"},
+            {"name": "C"},
+            {"name": "E"},
+            {"name": "G"}
+          ]
+        },
+    
     
         {
-          "name": "La#",
+          "name": "A#",
           "keys": [
-            {"name": "La#"},
-            {"name": "Ré"},
-            {"name": "Fa"}
+            {"name": "A#"},
+            {"name": "D"},
+            {"name": "F"}
           ]
         },
         {
-          "name": "La#m",
+          "name": "A#m",
           "keys": [
-            {"name": "La#"},
-            {"name": "Do#"},
-            {"name": "Fa"}
+            {"name": "A#"},
+            {"name": "C#"},
+            {"name": "F"}
           ]
         },
         {
-          "name": "La# 7",
+          "name": "A# 7",
           "keys": [
-            {"name": "La#"},
-            {"name": "Ré"},
-            {"name": "Fa"},
-            {"name": "Sol#"}
+            {"name": "A#"},
+            {"name": "D"},
+            {"name": "F"},
+            {"name": "G#"}
           ]
         },
         {
-          "name": "La#m 7",
+          "name": "A#m 7",
           "keys": [
-            {"name": "La#"},
-            {"name": "Do#"},
-            {"name": "Fa"},
-            {"name": "Sol#"}
+            {"name": "A#"},
+            {"name": "C#"},
+            {"name": "F"},
+            {"name": "G#"}
           ]
         }
       ]
     },
     {
-      "type": "Si",
+      "type": "B",
       "chords": [
         {
-          "name": "Si b",
+          "name": "B♭",
           "keys": [
-            {"name": "Si b"},
-            {"name": "Ré"},
-            {"name": "Fa"}
+            {"name": "B♭"},
+            {"name": "D"},
+            {"name": "F"}
           ]
         },
         {
-          "name": "Si bm",
+          "name": "B♭m",
           "keys": [
-            {"name": "Si b"},
-            {"name": "Ré b"},
-            {"name": "Fa"}
+            {"name": "B♭"},
+            {"name": "D♭"},
+            {"name": "F"}
           ]
         },
         {
-          "name": "Si b 7",
+          "name": "B♭ 7",
           "keys": [
-            {"name": "Si b"},
-            {"name": "Ré"},
-            {"name": "Fa"},
-            {"name": "La b"}
+            {"name": "B♭"},
+            {"name": "D"},
+            {"name": "F"},
+            {"name": "A♭"}
           ]
         },
         {
-          "name": "Si bm 7",
+          "name": "B♭m 7",
           "keys": [
-            {"name": "Si b"},
-            {"name": "Ré b"},
-            {"name": "Fa"},
-            {"name": "La b"}
+            {"name": "B♭"},
+            {"name": "D♭"},
+            {"name": "F"},
+            {"name": "A♭"}
           ]
         },
     
         {
-          "name": "Si",
+          "name": "B",
           "keys": [
-            {"name": "Si"},
-            {"name": "Ré#"},
-            {"name": "Fa#"}
+            {"name": "B"},
+            {"name": "D#"},
+            {"name": "F#"}
           ]
         },
         {
-          "name": "Sim",
+          "name": "Bm",
           "keys": [
-            {"name": "Si"},
-            {"name": "Ré"},
-            {"name": "Fa#"}
+            {"name": "B"},
+            {"name": "D"},
+            {"name": "F#"}
           ]
         },
         {
-          "name": "Si 7",
+          "name": "B 7",
           "keys": [
-            {"name": "Si"},
-            {"name": "Ré#"},
-            {"name": "Fa#"},
-            {"name": "La"}
+            {"name": "B"},
+            {"name": "D#"},
+            {"name": "F#"},
+            {"name": "A"}
           ]
         },
         {
-          "name": "Sim 7",
+          "name": "Bm 7",
           "keys": [
-            {"name": "Si"},
-            {"name": "Ré"},
-            {"name": "Fa#"},
-            {"name": "La"}
+            {"name": "B"},
+            {"name": "D"},
+            {"name": "F#"},
+            {"name": "A"}
           ]
         }
       ]
