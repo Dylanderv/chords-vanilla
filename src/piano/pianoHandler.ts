@@ -21,22 +21,28 @@ function initChordTypeSelector() {
   resetSelector(_chordTypeSelector, 'chordType');
   for (let index = 0; index < pianoChordsTypeList.length; index++) {
     const pianoChordsType = pianoChordsTypeList[index];
-    addElementToSelector(_chordTypeSelector, pianoChordsType.type, "chordType", handleChordTypeClick, pianoChordsType);
+    addElementToSelector(_chordTypeSelector, pianoChordsType.type, "chordType", pianoChordsType.type, handleChordTypeClick, pianoChordsType);
     if (index !== pianoChordsTypeList.length - 1) addSeparator(_chordTypeSelector);
   }
 }
 
 function handleChordTypeClick(type: IPianoChordsType) {
+  Array.from(_chordTypeSelector.getElementsByClassName("selected"))
+    .forEach((selectedElement) => selectedElement.classList.remove("selected"));
+  document.getElementById(type.type).classList.add('selected')
   resetSelector(_chordSelector, 'chord');
   resetSelector(_chordSelector, "separator");
   let chords = type.chords;
   for (let index = 0; index < chords.length; index++) {
     const pianoChord = chords[index];
-    addElementToSelector(_chordSelector, pianoChord.name, "chord", handleChordClick, pianoChord);
+    addElementToSelector(_chordSelector, pianoChord.name, "chord", pianoChord.name, handleChordClick, pianoChord);
     if (index !== chords.length - 1) addSeparator(_chordSelector);
   }
 }
 
 function handleChordClick(chord: IChord) {
+  Array.from(_chordSelector.getElementsByClassName("selected"))
+    .forEach((selectedElement) => selectedElement.classList.remove("selected"));
+  document.getElementById(chord.name).classList.add('selected')
   console.log(chord)
 }

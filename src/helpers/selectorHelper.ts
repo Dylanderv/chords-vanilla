@@ -1,7 +1,8 @@
-export function addElementToSelector(divElement: HTMLDivElement, value: string, className: string, clickHandler: Function, functionParameter: any) {
+export function addElementToSelector(divElement: HTMLDivElement, value: string, className: string, uniqueId: string, clickHandler: Function, functionParameter: any) {
   let elementToAdd: HTMLSpanElement = document.createElement('span');
   elementToAdd.innerHTML = value;
-  elementToAdd.classList.add(className)
+  elementToAdd.classList.add(className);
+  elementToAdd.id = uniqueId;
   elementToAdd.addEventListener('click', () => clickHandler(functionParameter))
   divElement.append(elementToAdd);
 }

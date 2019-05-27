@@ -23,7 +23,11 @@ hr {
 }
 
 .chordType:hover, .chord:hover, .instrument:hover {
-  color: blueviolet;
+  color: #1989fa;
+}
+
+.selected {
+  color: #1989fa;
 }
 
 @keyframes opacity {
@@ -32,14 +36,5 @@ hr {
   }
   100% {
     opacity: 1;
-  }
-}
-
-@keyframes hovered {
-  0% {
-    color: black;
-  }
-  100% {
-    color: blue;
   }
 }
