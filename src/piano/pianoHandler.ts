@@ -2,7 +2,7 @@ import { IPianoChordsType } from "../model/IPianoChordsType";
 import { getAllPianoChords } from "../helpers/pianoChordsHelper";
 import { IChord } from "../model/IChord";
 import { resetSelector, addElementToSelector, addSeparator } from "../helpers/selectorHelper";
-import { test, renderSvg } from "../helpers/pianoSvgHandler";
+import { renderSvg } from "../helpers/pianoSvgHandler";
 import { getFrChord } from "../helpers/chordEnFr";
 
 let _chordShow: HTMLDivElement = null;

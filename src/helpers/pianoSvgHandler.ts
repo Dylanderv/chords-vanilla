@@ -4,22 +4,6 @@ import { IChord } from '../model/IChord';
 const Serializer = new XMLSerializer();
 const bemol = '♭';
 
-const correspondancesBlackKeys = [
-  ["Do#", "Ré♭"],
-  ["Ré#", "Mi♭"],
-  ["Fa#", "Sol♭"],
-  ["Sol#", "La♭"],
-  ["La#", "Si♭"],
-];
-
-const correspondancesBlackKeysEn = [
-  ["C#", "D♭"],
-  ["D#", "E♭"],
-  ["F#", "G♭"],
-  ["G#", "A♭"],
-  ["A#", "B♭"],
-];
-
 const blackListBlackKeys: string[] = ["D♭", "E♭", "G♭", "A♭", "B♭"]
 
 const corBlackKeysEn = {
@@ -48,12 +32,6 @@ const keyOrder = {
   A: 10,
   "A#": 11,
   B: 12
-}
-
-export function test(element: HTMLDivElement) {
-  const piano = new DOMParser().parseFromString(PianoSVG, 'text/xml');
-  piano.getElementById("octave-1-C-key").setAttribute("fill", "#ff0000");
-  element.innerHTML = Serializer.serializeToString(piano);
 }
 
 export function renderSvg(element: HTMLDivElement, chord: IChord) {
