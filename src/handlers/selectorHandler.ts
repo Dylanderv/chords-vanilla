@@ -20,7 +20,9 @@ export function initInstrumentSelector() {
   addElementToSelector(_instrumentSelector, 'Ukulele', "instrument", "Ukulele", initUkulele, null);
 }
 
-export function handleInstrumentClick(chordTypeInit: {name: string, parameter: any}[], onClickHandler: Function) {
+export function handleInstrumentClick(instrument, chordTypeInit: {name: string, parameter: any}[], onClickHandler: Function) {
+  removeClassForAllIn(_instrumentSelector, "selected");
+  addClassToElement(document.getElementById(instrument), 'selected');
   resetSelector(_chordTypeSelector, "separator");
   resetSelector(_chordTypeSelector, 'chordType');
   for (let index = 0; index < chordTypeInit.length; index++) {

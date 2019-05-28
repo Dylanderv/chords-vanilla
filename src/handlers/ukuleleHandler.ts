@@ -12,7 +12,7 @@ export function initUkulele() {
 }
 
 function initUkuleleChordTypeSelector() {
-  handleInstrumentClick(ukuleleChords.keys.map(element => {
+  handleInstrumentClick('Ukulele', ukuleleChords.keys.map(element => {
     return {
       name: element,
       parameter: element

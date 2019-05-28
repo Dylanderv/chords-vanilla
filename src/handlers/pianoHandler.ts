@@ -12,7 +12,7 @@ export function initPiano() {
 }
 
 function initPianoChordTypeSelector() {
-  handleInstrumentClick(pianoChordsTypeList.map(element => {
+  handleInstrumentClick('Piano', pianoChordsTypeList.map(element => {
     return {
       name: element.type,
       parameter: element
