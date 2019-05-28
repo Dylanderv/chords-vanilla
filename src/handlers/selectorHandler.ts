@@ -1,5 +1,5 @@
 import { resetSelector, addElementToSelector, addSeparator, removeClassForAllIn, addClassToElement } from "../helpers/selectorHelper";
-import { getFrChord } from "../helpers/chordEnFr";
+import { getChord } from "../helpers/chordEnFr";
 import { initPiano } from "./pianoHandler";
 import { initUkulele } from "./ukuleleHandler";
 
@@ -27,7 +27,7 @@ export function handleInstrumentClick(instrument, chordTypeInit: {name: string, 
   resetSelector(_chordTypeSelector, 'chordType');
   for (let index = 0; index < chordTypeInit.length; index++) {
     const chordName = chordTypeInit[index];
-    addElementToSelector(_chordTypeSelector, getFrChord(chordName.name), "chordType", chordName.name, onClickHandler, chordName.parameter);
+    addElementToSelector(_chordTypeSelector, getChord(chordName.name), "chordType", chordName.name, onClickHandler, chordName.parameter);
     if (index !== chordTypeInit.length - 1) addSeparator(_chordTypeSelector);
   }
 }
@@ -39,7 +39,7 @@ export function handleChordTypeClick(newTypeSelected: string, chordsInit: {name:
   resetSelector(_chordSelector, "separator");
   for (let index = 0; index < chordsInit.length; index++) {
     const chord = chordsInit[index];
-    addElementToSelector(_chordSelector, getFrChord(chord.name), "chord", chord.name, onClickHandler, chord.parameter);
+    addElementToSelector(_chordSelector, getChord(chord.name), "chord", chord.name, onClickHandler, chord.parameter);
     if (index !== chordsInit.length - 1) addSeparator(_chordSelector);
   }
 }

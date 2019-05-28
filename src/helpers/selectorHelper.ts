@@ -1,5 +1,5 @@
 export function addElementToSelector(divElement: HTMLDivElement, value: string, className: string, uniqueId: string, clickHandler: Function, functionParameter: any) {
-  let elementToAdd: HTMLSpanElement = document.createElement('span');
+  let elementToAdd: HTMLSpanElement = document.createElement('button');
   elementToAdd.innerHTML = value;
   elementToAdd.classList.add(className);
   elementToAdd.id = uniqueId;
