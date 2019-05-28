@@ -1,7 +1,8 @@
 import { getAllUkuleleChords } from "../helpers/chordsHelper";
 import { IUkuleleChords } from "../model/IUkuleleChords";
-import { handleInstrumentClick, handleChordTypeClick } from "./selectorHandler";
+import { handleInstrumentClick, handleChordTypeClick, handleChordClick } from "./selectorHandler";
 import { IUkuleleChord } from "../model/IUkuleleChord";
+import { initUkuleleRender } from "./ukuleleSvgHandler";
 
 let ukuleleChords: IUkuleleChords = null;
 
@@ -33,9 +34,7 @@ function handleUkuleleChordTypeClick(chord: string) {
 }
 
 function handleUkuleleChordClick(chord: {chord: string, suffix: string}) {
-  console.log(chord);
-  console.log(ukuleleChords.chords[chord.chord]);
   let chordToRender = (ukuleleChords.chords[chord.chord] as IUkuleleChord[]).find(ukuleleChord => ukuleleChord.suffix === chord.suffix);
   console.log(chordToRender);
-  // handleChordClick(chord.name, renderSvg, [chord]);
+  handleChordClick(chord.chord + chord.suffix, initUkuleleRender, [chordToRender]);
 }
