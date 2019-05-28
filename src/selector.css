@@ -19,7 +19,7 @@ hr {
 .chordType, .chord, .instrument {
   animation: opacity 0.4s ease-in-out;
   transition: color 0.15s ease-in-out;
-  padding: 15px;
+  padding: 10px;
 }
 
 .chordType:hover, .chord:hover, .instrument:hover {

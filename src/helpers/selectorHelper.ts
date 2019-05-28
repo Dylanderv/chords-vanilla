@@ -24,3 +24,12 @@ export function resetSelector(divElement: HTMLDivElement, filterClass: string) {
     }
   }
 }
+
+export function removeClassForAllIn(element: HTMLElement, classToRemove: string) {
+  Array.from(element.getElementsByClassName(classToRemove))
+    .forEach((selectedElement) => selectedElement.classList.remove(classToRemove));
+}
+
+export function addClassToElement(element: HTMLElement, classToAdd: string) {
+  element.classList.add(classToAdd)
+}
