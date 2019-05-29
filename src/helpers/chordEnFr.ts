@@ -30,12 +30,12 @@ export function initLangButton(langSelector: HTMLDivElement) {
   _langSelectorButton.addEventListener("click", () => setChordLang(chordLang === "fr" ? "en" : "fr") )
 }
 
-export function getFrChord(enChord: string) {
+export function getFrChord(enChord: string): string {
   let frMain = correspondanceEnFr[enChord.charAt(0)];
   return frMain + enChord.substring(1);
 }
 
-export function getChord(baseChord: string) {
+export function getChord(baseChord: string): string {
   if (chordLang === "fr") {
     return getFrChord(baseChord);
   } else {
