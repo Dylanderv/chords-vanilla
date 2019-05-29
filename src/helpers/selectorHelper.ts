@@ -2,6 +2,7 @@ export function addElementToSelector(divElement: HTMLDivElement, value: string, 
   let elementToAdd: HTMLSpanElement = document.createElement('button');
   elementToAdd.innerHTML = value;
   elementToAdd.classList.add(className);
+  elementToAdd.classList.add("ripple");
   elementToAdd.id = uniqueId;
   elementToAdd.addEventListener('click', () => clickHandler(functionParameter))
   divElement.append(elementToAdd);
