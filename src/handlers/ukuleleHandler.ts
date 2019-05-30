@@ -21,7 +21,7 @@ function initUkuleleChordTypeSelector() {
 }
 
 function handleUkuleleChordTypeClick(chord: string) {
-  handleChordTypeClick(chord, ukuleleChords.suffixes.map(suffix => {
+  handleChordTypeClick("type" + chord, ukuleleChords.suffixes.map(suffix => {
     return {
       name: chord + suffix,
       parameter: {
@@ -34,5 +34,5 @@ function handleUkuleleChordTypeClick(chord: string) {
 
 function handleUkuleleChordClick(chord: {chord: string, suffix: string}) {
   let chordToRender = (ukuleleChords.chords[chord.chord] as IUkuleleChord[]).find(ukuleleChord => ukuleleChord.suffix === chord.suffix);
-  handleChordClick(chord.chord + chord.suffix, initUkuleleRender, [chordToRender]);
+  handleChordClick("chord" + chord.chord + chord.suffix, initUkuleleRender, [chordToRender]);
 }

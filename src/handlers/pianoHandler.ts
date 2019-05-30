@@ -21,7 +21,7 @@ function initPianoChordTypeSelector() {
 }
 
 function handlePianoChordTypeClick(type: IPianoChordsType) {
-  handleChordTypeClick(type.type, type.chords.map(chord => {
+  handleChordTypeClick("type" + type.type, type.chords.map(chord => {
     return {
       name: chord.name,
       parameter: chord
@@ -30,5 +30,5 @@ function handlePianoChordTypeClick(type: IPianoChordsType) {
 }
 
 function handlePianoChordClick(chord: IChord) {
-  handleChordClick(chord.name, renderSvg, [chord]);
+  handleChordClick("chord" + chord.name, renderSvg, [chord]);
 }

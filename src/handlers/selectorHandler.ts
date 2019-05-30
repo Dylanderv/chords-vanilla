@@ -27,7 +27,7 @@ export function handleInstrumentClick(instrument, chordTypeInit: {name: string, 
   resetSelector(_chordTypeSelector, 'chordType');
   for (let index = 0; index < chordTypeInit.length; index++) {
     const chordName = chordTypeInit[index];
-    addElementToSelector(_chordTypeSelector, getChord(chordName.name), "chordType", chordName.name, onClickHandler, chordName.parameter);
+    addElementToSelector(_chordTypeSelector, getChord(chordName.name), "chordType", "type" + chordName.name, onClickHandler, chordName.parameter);
     if (index !== chordTypeInit.length - 1) addSeparator(_chordTypeSelector);
   }
 }
@@ -39,12 +39,14 @@ export function handleChordTypeClick(newTypeSelected: string, chordsInit: {name:
   resetSelector(_chordSelector, "separator");
   for (let index = 0; index < chordsInit.length; index++) {
     const chord = chordsInit[index];
-    addElementToSelector(_chordSelector, getChord(chord.name), "chord", chord.name, onClickHandler, chord.parameter);
+    addElementToSelector(_chordSelector, getChord(chord.name), "chord", "chord" + chord.name, onClickHandler, chord.parameter);
     if (index !== chordsInit.length - 1) addSeparator(_chordSelector);
   }
 }
 
 export function handleChordClick(newChordSelected: string, renderFunction: Function, parameter: any[]) {
+  console.log(newChordSelected);
+  console.log(document.getElementById(newChordSelected));
   removeClassForAllIn(_chordSelector, "selected");
   addClassToElement(document.getElementById(newChordSelected), 'selected');
   renderFunction(_chordShow, ...parameter);
