@@ -55,12 +55,6 @@ function renderButton(currentPosition: number) {
     buttonPrev.removeAttribute('disabled');
   }
   document.getElementById('pagesNumber').innerHTML = (currentPosition + 1 as unknown as string) + "/" + _chord.positions.length
-
-  
-  // _pagesDiv.innerHTML = elementsToAdd;
-
-  
-  
 }
 
 function nextPageHandler() {

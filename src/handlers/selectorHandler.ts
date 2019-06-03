@@ -45,8 +45,6 @@ export function handleChordTypeClick(newTypeSelected: string, chordsInit: {name:
 }
 
 export function handleChordClick(newChordSelected: string, renderFunction: Function, parameter: any[]) {
-  console.log(newChordSelected);
-  console.log(document.getElementById(newChordSelected));
   removeClassForAllIn(_chordSelector, "selected");
   addClassToElement(document.getElementById(newChordSelected), 'selected');
   renderFunction(_chordShow, ...parameter);

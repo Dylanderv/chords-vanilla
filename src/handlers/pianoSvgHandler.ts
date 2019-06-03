@@ -2,10 +2,7 @@ import { PianoSVG } from '../svg/PianoKeyboard';
 import { IChord } from '../model/IChord';
 
 const Serializer = new XMLSerializer();
-const bemol = '♭';
-
 const blackListBlackKeys: string[] = ["D♭", "E♭", "G♭", "A♭", "B♭"]
-
 const corBlackKeysEn = {
   "C#": "D♭", 
   "D♭": "C#",
@@ -18,7 +15,6 @@ const corBlackKeysEn = {
   "A#": "B♭", 
   "B♭": "A#",
 };
-
 const keyOrder = {
   C: 1,
   "C#": 2,
