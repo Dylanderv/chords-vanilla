@@ -1,4 +1,3 @@
-import { initPiano } from "./handlers/pianoHandler";
 import { init, initInstrumentSelector } from "./handlers/selectorHandler";
 import { initLangButton } from "./helpers/chordEnFr";
 
