@@ -1,7 +1,8 @@
 import { resetSelector, addElementToSelector, addSeparator, removeClassForAllIn, addClassToElement } from "../helpers/selectorHelper";
 import { getChord } from "../helpers/chordEnFr";
-import { initPiano } from "./pianoHandler";
-import { initUkulele } from "./ukuleleHandler";
+import { initPiano } from "./piano/pianoHandler";
+import { initUkulele } from "./ukulele/ukuleleHandler";
+import { initGuitar } from "./guitar/guitarHandler";
 
 let _instrumentSelector: HTMLDivElement = null;
 let _chordShow: HTMLDivElement = null;
@@ -18,6 +19,7 @@ export function init(instrumentSelector: HTMLDivElement, chordTypeSelector: HTML
 export function initInstrumentSelector() {
   addElementToSelector(_instrumentSelector, 'Piano', "instrument", "Piano", initPiano, null);
   addElementToSelector(_instrumentSelector, 'Ukulele', "instrument", "Ukulele", initUkulele, null);
+  addElementToSelector(_instrumentSelector, 'Guitar', "instrument", "Guitar", initGuitar, null);
 }
 
 export function handleInstrumentClick(instrument, chordTypeInit: {name: string, parameter: any}[], onClickHandler: Function) {

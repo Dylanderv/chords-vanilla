@@ -1,7 +1,7 @@
-import { getAllUkuleleChords } from "../helpers/chordsHelper";
-import { IUkuleleChords } from "../model/IUkuleleChords";
-import { handleInstrumentClick, handleChordTypeClick, handleChordClick } from "./selectorHandler";
-import { IUkuleleChord } from "../model/IUkuleleChord";
+import { getAllUkuleleChords } from "../../helpers/chordsHelper";
+import { IUkuleleChords } from "../../model/IUkuleleChords";
+import { handleInstrumentClick, handleChordTypeClick, handleChordClick } from "../selectorHandler";
+import { IUkuleleChord } from "../../model/IUkuleleChord";
 import { initUkuleleRender } from "./ukuleleSvgHandler";
 
 let ukuleleChords: IUkuleleChords = null;

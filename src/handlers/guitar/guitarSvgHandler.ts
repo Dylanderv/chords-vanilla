@@ -1,19 +1,19 @@
-import { IUkuleleChord } from "../model/IUkuleleChord";
-import { getChord } from "../helpers/chordEnFr";
+import { getChord } from "../../helpers/chordEnFr";
+import { IGuitarChord } from "../../model/IGuitarChord";
 
-let _chord: IUkuleleChord = null;
+let _chord: IGuitarChord = null;
 let _element: HTMLElement = null;
 let _renderDiv: HTMLElement = null;
 let _pagesDiv: HTMLElement = null;
 let _currentPosition: number = 0;
 
-export function initUkuleleRender(element: HTMLElement, chord: IUkuleleChord) {
+export function initGuitarRender(element: HTMLElement, chord: IGuitarChord) {
   _chord = chord;
   _element = element;
   _currentPosition = 0;
   while(_element.firstChild) _element.removeChild(_element.firstChild);
   _renderDiv = document.createElement('div');
-  _renderDiv.id = "renderUkulele";
+  _renderDiv.id = "renderGuitar";
   _pagesDiv = document.createElement('div');
   _pagesDiv.id = "pagesUkulele"
   _element.appendChild(_renderDiv);
@@ -27,23 +27,25 @@ export function initUkuleleRender(element: HTMLElement, chord: IUkuleleChord) {
   let buttonNext: HTMLElement = document.getElementById('next');
   if (buttonNext !== null) buttonNext.addEventListener('click', nextPageHandler)
   if (buttonPrev !== null) buttonPrev.addEventListener('click', prevPageHandler)
-  ukuleleRender(_currentPosition);
+  guitarRender(_currentPosition);
 }
 
-function ukuleleRender(currentPosition: number) {
+function guitarRender(currentPosition: number) {
   if (currentPosition >= _chord.positions.length) return;
   let chordPosition = _chord.positions[currentPosition];
-  let frets = chordPosition.frets.join('');
+  let frets = "";
+  chordPosition.frets.forEach(fret => frets += (fret === -1 ? 'x' : fret));
   let fingers = chordPosition.fingers.join('');
   let position = chordPosition.baseFret;
-  _renderDiv.innerHTML = '<uke-chord frets="' + frets + '" fingers="' + fingers + '" position="' + position + '" name="' + getChord(_chord.key) + _chord.suffix +'"></uke-chord>'
+  console.log(frets);
+  _renderDiv.innerHTML = '<p></p>base fret : ' + chordPosition.baseFret + '</p> <tab-chord value="' + frets + '" name="' + getChord(_chord.key) + _chord.suffix +'"></tab-chord>'
   renderButton(currentPosition);
 }
+
 
 function renderButton(currentPosition: number) {
   let buttonPrev: HTMLElement = document.getElementById('prev');
   let buttonNext: HTMLElement = document.getElementById('next');
-  let elementsToAdd: string = '';
   if (currentPosition === 0) {
     buttonPrev.setAttribute("disabled", '');
     buttonNext.removeAttribute('disabled');
@@ -59,10 +61,10 @@ function renderButton(currentPosition: number) {
 
 function nextPageHandler() {
   _currentPosition += 1;
-  ukuleleRender(_currentPosition);
+  guitarRender(_currentPosition);
 }
 
 function prevPageHandler() {
   _currentPosition -= 1;
-  ukuleleRender(_currentPosition);
+  guitarRender(_currentPosition);
 }

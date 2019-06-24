@@ -1,5 +1,5 @@
-import { PianoSVG } from '../svg/PianoKeyboard';
-import { IChord } from '../model/IChord';
+import { PianoSVG } from '../../svg/PianoKeyboard';
+import { IChord } from '../../model/IChord';
 
 const Serializer = new XMLSerializer();
 const blackListBlackKeys: string[] = ["D♭", "E♭", "G♭", "A♭", "B♭"]

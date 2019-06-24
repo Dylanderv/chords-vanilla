@@ -1,8 +1,8 @@
-import { IPianoChordsType } from "../model/IPianoChordsType";
-import { getAllPianoChords } from "../helpers/chordsHelper";
-import { IChord } from "../model/IChord";
+import { IPianoChordsType } from "../../model/IPianoChordsType";
+import { getAllPianoChords } from "../../helpers/chordsHelper";
+import { IChord } from "../../model/IChord";
 import { renderSvg } from "./pianoSvgHandler";
-import { handleInstrumentClick, handleChordTypeClick, handleChordClick } from "./selectorHandler";
+import { handleInstrumentClick, handleChordTypeClick, handleChordClick } from "../selectorHandler";
 
 let pianoChordsTypeList: IPianoChordsType[] = null;
 
