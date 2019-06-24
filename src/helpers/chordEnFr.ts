@@ -22,6 +22,10 @@ let chordLang: "fr"|"en" = "fr"
 let _langSelector: HTMLDivElement = null;
 let _langSelectorButton: HTMLButtonElement = null;
 
+/**
+ * Permet d'initialiser le bouton de langage
+ * @param langSelector Div dans lequel ajouter le bouton de langage
+ */
 export function initLangButton(langSelector: HTMLDivElement) {
   _langSelector = langSelector;
   _langSelectorButton = document.createElement('button');
@@ -30,11 +34,19 @@ export function initLangButton(langSelector: HTMLDivElement) {
   _langSelectorButton.addEventListener("click", () => setChordLang(chordLang === "fr" ? "en" : "fr") )
 }
 
+/**
+ * Renvoie le chords en français
+ * @param enChord chord en anglais
+ */
 export function getFrChord(enChord: string): string {
   let frMain = correspondanceEnFr[enChord.charAt(0)];
   return frMain + enChord.substring(1);
 }
 
+/**
+ * Renvoie le chord en fonction du langage sélectionné
+ * @param baseChord chord de base du fichier JSON
+ */
 export function getChord(baseChord: string): string {
   if (chordLang === "fr") {
     return getFrChord(baseChord);
@@ -43,6 +55,10 @@ export function getChord(baseChord: string): string {
   }
 }
 
+/**
+ * Défini la nouvelle langue à utilsier
+ * @param newLang nouvelle langue
+ */
 function setChordLang(newLang: "fr"|"en") {
   chordLang = newLang;
   _langSelectorButton.innerHTML = chordLang === "fr" ? "en" : "fr";
