@@ -1,3 +1,5 @@
+https://dylanderv.github.io/chords-vanilla/
+
 # Deploy on gh-pages
 
 On master branch type :
